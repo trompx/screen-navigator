@@ -23,7 +23,7 @@ module.exports = function(newScreen, oldScreen, onComplete){
 
 	function dispose(){
 		if (oldScreen) oldScreen.off('animateOutComplete', onAnimComplete);
-		if (newScreen) newScreen.off('animateOutComplete', onAnimComplete);
+		if (newScreen) newScreen.off('animateInComplete', onAnimComplete);
 	}
 
 	return function cancel(){
